@@ -7,7 +7,7 @@ app.use(cors());
 const PORT = 3000;
 const extractor = await pipeline(
   "feature-extraction",
-  "Xenova/all-mpnet-base-v2"
+  "Xenova/all-MiniLM-L6-v2"
 );
 
 app.get("/", async (req, res) => {
